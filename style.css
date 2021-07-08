@@ -1,0 +1,227 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+main img {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #83092e;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 72px;
+  color: #ecdbc9;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* -------  Join Form ------- */
+
+#join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  border: 2px solid #6b1a22;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+.flexer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+ 
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main img {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #join {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #join img {
+    width: 50vw;
+  }
+
+  #about img {
+    width: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #download img {
+    width: 50%;
+  }
+
+  #download div {
+    padding-right: 10px;
+  }
+
+  #about .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #download {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #blog div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #blog div div {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+  }
+
+  #blog div div img {
+    width: 100%;
+  }
+}
+
+
+@media all and (max-width: 850px) {
+
+  nav {
+    overflow: hidden;
+  }
+
+  #join img {
+    width: 40vw;
+    margin: 5px;
+  }
+  .logo {
+    font-size: 10vw;
+  }
+  body {
+    overflow: auto;
+  }
+}
